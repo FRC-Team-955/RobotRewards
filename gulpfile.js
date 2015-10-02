@@ -9,7 +9,7 @@ gulp.task("build", function () {
 	gulp.src("src/public/index.jade")
 		.pipe(jade())
 		.pipe(minHTML())
-		.pipe(gulp.dest("dist/publc/"));
+		.pipe(gulp.dest("dist/public/"));
 
 	gulp.src("src/public/jsx/**.jsx")
 		.pipe(react())
@@ -23,4 +23,11 @@ gulp.task("build", function () {
 	gulp.src("src/app.js")
 		.pipe(uglify({ mangle: false }))
 		.pipe(gulp.dest("dist/"));
+});
+
+gulp.task("watch", function () {
+	gulp.watch("src/public/index.jade", ["build"]);
+	gulp.watch("src/public/jsx/**.jsx", ["build"]);
+	gulp.watch("src/public/css/**.css", ["build"]);
+	gulp.watch("src/app.js", ["build"]);
 });
