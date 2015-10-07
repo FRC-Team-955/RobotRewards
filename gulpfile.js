@@ -31,7 +31,7 @@ gulp.task("build:serv", function () {
 		.pipe(gulp.dest("dist/"));
 });
 
-gulp.task("watch", function () {
+gulp.task("watch", ["build:jade", "build:jsx", "build:css", "build:serv"], function () {
 	gulp.watch("src/public/index.jade", ["build:jade"]);
 	gulp.watch("src/public/jsx/**.jsx", ["build:jsx"]);
 	gulp.watch("src/public/css/**.css", ["build:css"]);
