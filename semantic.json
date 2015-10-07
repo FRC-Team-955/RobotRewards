@@ -1,0 +1,54 @@
+{
+  "base": "semantic/",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "../dist/public/semantic/",
+      "uncompressed": "../src/public/components/",
+      "compressed": "../dist/public/components/",
+      "themes": "../src/public/themes/"
+    },
+    "clean": "dist/"
+  },
+  "permission": false,
+  "rtl": "No",
+  "components": [
+    "reset",
+    "site",
+    "button",
+    "container",
+    "divider",
+    "header",
+    "icon",
+    "image",
+    "input",
+    "list",
+    "loader",
+    "form",
+    "grid",
+    "menu",
+    "card",
+    "statistic",
+    "accordion",
+    "checkbox",
+    "dimmer",
+    "dropdown",
+    "modal",
+    "popup",
+    "progress",
+    "rating",
+    "search",
+    "sidebar",
+    "transition",
+    "api",
+    "form",
+    "state",
+    "visibility"
+  ],
+  "version": "2.1.4"
+}
