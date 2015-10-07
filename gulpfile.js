@@ -2,7 +2,6 @@ var gulp    = require("gulp"),
 	jade    = require("gulp-jade"),
 	minCSS  = require("gulp-minify-css"),
 	minHTML = require("gulp-minify-html"),
-	react   = require("gulp-react"),
 	uglify  = require("gulp-uglify");
 
 gulp.task("build:jade", function () {
@@ -13,8 +12,7 @@ gulp.task("build:jade", function () {
 });
 
 gulp.task("build:jsx", function () {
-	gulp.src("src/public/jsx/**.jsx")
-		.pipe(react())
+	gulp.src("src/public/js/**.js")
 		.pipe(uglify({ mangle: false }))
 		.pipe(gulp.dest("dist/public/js/"));
 });
@@ -31,7 +29,7 @@ gulp.task("build:serv", function () {
 		.pipe(gulp.dest("dist/"));
 });
 
-gulp.task("watch", ["build:jade", "build:jsx", "build:css", "build:serv"], function () {
+gulp.task("watch", ["build:jade", "build:js", "build:css", "build:serv"], function () {
 	gulp.watch("src/public/index.jade", ["build:jade"]);
 	gulp.watch("src/public/jsx/**.jsx", ["build:jsx"]);
 	gulp.watch("src/public/css/**.css", ["build:css"]);
