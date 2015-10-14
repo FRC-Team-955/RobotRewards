@@ -1,5 +1,83 @@
-DOCTYPE html
+DOCTYPE
 html
 	head
 		title Robot Rewards
+		link(type="text/css" rel="stylesheet" href="semantic/semantic.min.css")
+		link(type="text/css" rel="stylesheet" href="components/accordion.min.css")
+		link(type="text/css" rel="stylesheet" href="components/button.min.css")
+		link(type="text/css" rel="stylesheet" href="components/card.min.css")
+		link(type="text/css" rel="stylesheet" href="components/checkbox.min.css")
+		link(type="text/css" rel="stylesheet" href="components/container.min.css")
+		link(type="text/css" rel="stylesheet" href="components/dimmer.min.css")
+		link(type="text/css" rel="stylesheet" href="components/divider.min.css")
+		link(type="text/css" rel="stylesheet" href="components/dropdown.min.css")
+		link(type="text/css" rel="stylesheet" href="components/form.min.css")
+		link(type="text/css" rel="stylesheet" href="components/grid.min.css")
+		link(type="text/css" rel="stylesheet" href="components/header.min.css")
+		link(type="text/css" rel="stylesheet" href="components/icon.min.css")
+		link(type="text/css" rel="stylesheet" href="components/image.min.css")
+		link(type="text/css" rel="stylesheet" href="components/input.min.css")
+		link(type="text/css" rel="stylesheet" href="components/list.min.css")
+		link(type="text/css" rel="stylesheet" href="components/loader.min.css")
+		link(type="text/css" rel="stylesheet" href="components/menu.min.css")
+		link(type="text/css" rel="stylesheet" href="components/modal.min.css")
+		link(type="text/css" rel="stylesheet" href="components/popup.min.css")
+		link(type="text/css" rel="stylesheet" href="components/progress.min.css")
+		link(type="text/css" rel="stylesheet" href="components/rating.min.css")
+		link(type="text/css" rel="stylesheet" href="components/reset.min.css")
+		link(type="text/css" rel="stylesheet" href="components/search.min.css")
+		link(type="text/css" rel="stylesheet" href="components/sidebar.min.css")
+		link(type="text/css" rel="stylesheet" href="components/site.min.css")
+		link(type="text/css" rel="stylesheet" href="components/statistic.min.css")
+		link(type="text/css" rel="stylesheet" href="components/transition.min.css")
+		link(type="text/css" rel="stylesheet" href="css/index.css")
 	body
+
+		.ui.one.column.centered.doubling.grid.container
+			.row
+				.column
+					.ui.form
+						.field
+							select.ui.search.dropdown#teamSelect
+								option(value="") Select Team Member...
+								option(value="GB") Graham Barber
+								option(value="MS") Matthew Sundberg
+								option(value="TT") Towaki Takikawa
+								option(value="AK") Andrey Kornilovich
+								option(value="AC") Alicia Carone
+			.row
+				.column
+					.ui.dimmable.dimmed.segment
+						img.ui.image.fluid(src="http://lorempixel.com/1080/1440")
+						.ui.simple.dimmer
+							.content
+								.centered
+									.ui.inverted.header
+										h1 0
+			.two.column.centered.row
+				.column
+					.ui.massive.basic.red.fluid.icon.button
+						i.minus.icon
+				.column
+					.ui.massive.basic.blue.fluid.icon.button
+						i.plus.icon
+
+		script(src="js/jquery.min.js")
+		script(src="semantic/semantic.min.js")
+		script(src="components/accordion.min.js")
+		script(src="components/api.min.js")
+		script(src="components/checkbox.min.js")
+		script(src="components/dimmer.min.js")
+		script(src="components/dropdown.min.js")
+		script(src="components/form.min.js")
+		script(src="components/modal.min.js")
+		script(src="components/popup.min.js")
+		script(src="components/progress.min.js")
+		script(src="components/rating.min.js")
+		script(src="components/search.min.js")
+		script(src="components/sidebar.min.js")
+		script(src="components/site.min.js")
+		script(src="components/state.min.js")
+		script(src="components/transition.min.js")
+		script(src="components/visibility.min.js")
+		script(src="js/index.js")

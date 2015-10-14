@@ -1,0 +1,2 @@
+$("#teamSelect")
+	.dropdown();
