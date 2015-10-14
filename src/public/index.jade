@@ -36,7 +36,17 @@ html
 		.ui.one.column.centered.doubling.grid.container
 			.row
 				.column
-					.ui.form
+					.ui.dimmable.dimmed.segment
+						img.ui.image.fluid(src="http://lorempixel.com/1080/1440")
+						.ui.simple.dimmer
+							.content
+								.centered
+									.ui.huge.inverted.statistic
+										.value 0
+										.label Points
+			.row
+				.column
+					.ui.large.form
 						.field
 							select.ui.search.dropdown#teamSelect
 								option(value="") Select Team Member...
@@ -45,21 +55,12 @@ html
 								option(value="TT") Towaki Takikawa
 								option(value="AK") Andrey Kornilovich
 								option(value="AC") Alicia Carone
-			.row
-				.column
-					.ui.dimmable.dimmed.segment
-						img.ui.image.fluid(src="http://lorempixel.com/1080/1440")
-						.ui.simple.dimmer
-							.content
-								.centered
-									.ui.inverted.header
-										h1 0
 			.two.column.centered.row
 				.column
-					.ui.massive.basic.red.fluid.icon.button
+					.ui.massive.inverted.red.fluid.icon.button
 						i.minus.icon
 				.column
-					.ui.massive.basic.blue.fluid.icon.button
+					.ui.massive.inverted.blue.fluid.icon.button
 						i.plus.icon
 
 		script(src="js/jquery.min.js")
