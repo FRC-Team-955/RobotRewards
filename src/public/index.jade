@@ -33,11 +33,11 @@ html
 		link(type="text/css" rel="stylesheet" href="css/index.css")
 	body
 
-		.ui.one.column.centered.doubling.grid.container
+		.ui.one.column.centered.grid.container
 			.row
 				.column
 					.ui.dimmable.dimmed.segment
-						img.ui.image.fluid(src="http://lorempixel.com/1080/1440")
+						img.ui.fluid.image(src="http://lorempixel.com/1080/1440")
 						.ui.simple.dimmer
 							.content
 								.centered
@@ -46,15 +46,15 @@ html
 										.label Points
 			.row
 				.column
-					.ui.large.form
+					.ui.fluid.form
 						.field
-							select.ui.search.dropdown#teamSelect
-								option(value="") Select Team Member...
-								option(value="GB") Graham Barber
-								option(value="MS") Matthew Sundberg
-								option(value="TT") Towaki Takikawa
-								option(value="AK") Andrey Kornilovich
-								option(value="AC") Alicia Carone
+							select.ui.search.fluid.dropdown#teamMemberSelect
+								option#selectInit(value="") Select team member...
+								option(value="") Graham Barber
+								option(value="") Adam Jensen
+								option(value="") Sam Fisher
+								option(value="") Venom Snake
+								option(value="") Isaac Clarke
 			.two.column.centered.row
 				.column
 					.ui.massive.inverted.red.fluid.icon.button

@@ -1,2 +1,2 @@
-$("#teamSelect")
+$("#teamMemberSelect")
 	.dropdown();
