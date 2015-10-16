@@ -24,8 +24,8 @@ gulp.task("build:css", function () {
 });
 
 gulp.task("build:serv", function () {
-	gulp.src("src/app.js")
-		.pipe(uglify({ mangle: false }))
+	gulp.src("src/**.js")
+		.pipe(uglify())
 		.pipe(gulp.dest("dist/"));
 });
 
@@ -33,5 +33,5 @@ gulp.task("watch", ["build:jade", "build:js", "build:css", "build:serv"], functi
 	gulp.watch("src/public/index.jade", ["build:jade"]);
 	gulp.watch("src/public/js/**.js", ["build:js"]);
 	gulp.watch("src/public/css/**.css", ["build:css"]);
-	gulp.watch("src/app.js", ["build:serv"]);
+	gulp.watch("src/**.js", ["build:serv"]);
 });
