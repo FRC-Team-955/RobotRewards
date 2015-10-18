@@ -21,12 +21,12 @@ html
 			.row
 				.column
 					.ui.dimmable.dimmed.segment
-						img.ui.fluid.image(src="http://lorempixel.com/1080/1440")
+						img.ui.fluid.image#profilePic(src="http://lorempixel.com/1080/1440")
 						.ui.simple.dimmer
 							.content
 								.centered
 									.ui.huge.inverted.statistic
-										.value 0
+										.value#points 0
 										.label Points
 			.row
 				.column
@@ -34,17 +34,12 @@ html
 						.field
 							select.ui.search.fluid.dropdown#teamMemberSelect
 								option#selectInit(value="") Select team member...
-								option(value="") Graham Barber
-								option(value="") Adam Jensen
-								option(value="") Sam Fisher
-								option(value="") Venom Snake
-								option(value="") Isaac Clarke
 			.two.column.centered.row
 				.column
-					.ui.massive.inverted.red.fluid.icon.button
+					.ui.massive.inverted.red.fluid.icon.button#decrement
 						i.minus.icon
 				.column
-					.ui.massive.inverted.blue.fluid.icon.button
+					.ui.massive.inverted.blue.fluid.icon.button#increment
 						i.plus.icon
 
 		script(src="js/jquery.min.js")
@@ -54,4 +49,5 @@ html
 		script(src="components/form.min.js")
 		script(src="components/search.min.js")
 		script(src="components/visibility.min.js")
+		script(srv="js/deepstream.min.js")
 		script(src="js/index.js")
